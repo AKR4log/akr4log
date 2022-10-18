@@ -1,0 +1,40 @@
+{
+    "tables": {
+        "users": {
+            "tableName": "users",
+            "schema": {
+                "id": {
+                    "defaultValue": {
+                        "internal": true,
+                        "value": "Sequelize.UUIDV4"
+                    },
+                    "primaryKey": true,
+                    "field": "id",
+                    "seqType": "Sequelize.UUID"
+                },
+                "telegram_id": {
+                    "unique": true,
+                    "field": "telegram_id",
+                    "seqType": "Sequelize.STRING"
+                },
+                "phone": {
+                    "unique": true,
+                    "field": "phone",
+                    "seqType": "Sequelize.STRING"
+                },
+                "role": {
+                    "defaultValue": {
+                        "value": "USER"
+                    },
+                    "field": "role",
+                    "seqType": "Sequelize.STRING"
+                }
+            },
+            "indexes": []
+        }
+    },
+    "path": "C:\\akr4log\\services\\migrations\\_current.json",
+    "backupPath": "C:\\akr4log\\services\\migrations\\_current_bak.json",
+    "exists": false,
+    "revision": 1
+}
